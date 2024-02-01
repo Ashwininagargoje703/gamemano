@@ -6,10 +6,10 @@ import Slider from "./Slider";
 
 const LandingPage = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="px-4 md:px-8 lg:px-0 flex flex-col items-center md:items-stretch gap-5 py-2">
       <Slider />
-      {/* <Section /> */}
-      {/* <Section2 /> */}
+      <Section />
+      <Section2 />
       <Section3 />
     </div>
   );

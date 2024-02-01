@@ -3,7 +3,7 @@ import { FC } from "react";
 const Section3: FC = () => {
   return (
     <>
-      <div className="w-full p-4 md:p-8 flex flex-col items-center md:items-stretch" style={{backgroundColor:"#161510"}}>
+      <div className="w-full p-4 md:p-8 flex flex-col items-center md:items-stretch bg-black">
         <div className="md:text-right md:float-right mb-4 md:mb-0">
           <img
             className="mx-auto md:mx-0 md:float-right h-20"
@@ -44,7 +44,7 @@ const Section3: FC = () => {
 
       <div style={{ width: "100%", height: 40, background: "#382c19" }}></div>
 
-      <div className="w-full p-4 md:p-8 flex flex-col items-center " style={{backgroundColor:"#161510"}}>
+      <div className="w-full p-4 md:p-8 flex flex-col items-center bg-black">
         <div className="md:text-right md:float-right mb-4 md:mb-0">
           <img
             className="mx-auto md:mx-0 md:float-right h-20"
@@ -83,9 +83,9 @@ const Section3: FC = () => {
         </div>
       </div>
 
-      <div style={{ width: "100vw", height: 40, background: "#382c19" }}></div>
+      <div style={{ width: "100%", height: 40, background: "#382c19" }}></div>
 
-      <div className="w-full p-4 md:p-8 flex flex-col items-center" style={{backgroundColor:"#161510"}}>
+      <div className="w-full p-4 md:p-8 flex flex-col items-center bg-black">
         <div className="md:text-right md:float-right mb-4 md:mb-0">
           <img
             className="mx-auto md:mx-0 md:float-right h-20"
