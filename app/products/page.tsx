@@ -47,6 +47,8 @@ async function searchProduct(query: string) {
 
 export default async function Product({
   searchParams
+}: {
+  searchParams:any
 }) {
   const page = searchParams["page"] || "1";
   const limit = searchParams["limit"] || "9";
