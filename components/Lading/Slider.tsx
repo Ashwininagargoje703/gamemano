@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Slider: FC = () => {
   return (
-    <div className="relative w-full h-64 mt-10 mb-[-40px] md:mb-0 md:mt-2  md:h-screen overflow-hidden">
+    <div className="relative w-full h-54 mt-10 mb-[-40px] md:mb-0 md:mt-2  md:h-screen overflow-hidden">
       <Carousel
         className="w-full h-full"
         showStatus={false}

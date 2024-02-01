@@ -12,7 +12,7 @@ const Sidebar = () => {
     <div
       className={`h-screen flex flex-col items-center justify-center fixed top-0 z-20 transition-all duration-300 transform ${
         open ? "w-20 z-40" : "w-20 hidden md:block"
-      } bg-black text-white z-10`}
+      } bg-[#15140f] text-white z-10`}
     >
       <div className="flex flex-col items-center">
         <img

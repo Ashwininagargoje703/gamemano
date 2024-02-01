@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const Section2: FC = () => {
   return (
-    <div className="w-full bg-black p-4 md:p-8 flex flex-col items-center md:items-stretch">
+    <div className="w-full bg-[linear-gradient(to bottom, rgb(19, 16, 10), black)] p-4 md:p-8 flex flex-col items-center md:items-stretch">
       <div className="md:text-right md:float-right mb-4 md:mb-0">
         <img
           className="mx-auto md:mx-0 md:float-right"

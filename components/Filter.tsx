@@ -52,16 +52,16 @@ function Filter({ categories }: { categories: [string] }) {
 
       {/* Filter content */}
       <div className={`md:block ${filterOpen ? "block" : "hidden"}`}>
-        <div className="p-4 bg-white shadow-md rounded-md mb-4 md:mb-0 h-full">
+        <div className="p-8 pl-3 pr-3 bg-[#373126] text-color-white shadow-md rounded-md mb-4 md:mb-0 h-full">
           <div className="mb-4">
-            <h3 className="text-lg font-semibold mb-4">Categories</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Categories</h3>
             {categories.map((category: string, index: number) => (
               <div key={index} className="mb-2">
                 <label
                   className={`flex items-center text-xs md:text-sm cursor-pointer ${
                     category === selectedProduct
                       ? "bg-yellow-300 pl-2 text-black font-semibold"
-                      : "bg-transparent text-slate-800"
+                      : "bg-transparent text-gray-200"
                   }`}
                 >
                   <input
@@ -70,13 +70,13 @@ function Filter({ categories }: { categories: [string] }) {
                     onChange={() => handleCheckboxClick(category)}
                     className="cursor-pointer"
                   />
-                  {category?.toUpperCase().split("-").join(" ")}
+                 <p className="ml-2 text-xs"> {category?.toUpperCase().split("-").join(" ")}</p>
                 </label>
               </div>
             ))}
             <div className="mt-2">
               <button
-                className="bg-orange-400 px-3 py-1 text-xs md:text-sm outline-none text-yellow-50 w-full mt-4"
+                className="bg-orange-400 px-3 py-1 text-xs md:text-sm outline-none text-yellow-50 w-full mt-4 rounded-full"
                 onClick={reset}
               >
                 reset

@@ -39,8 +39,8 @@ const Pagination: FC<PaginationProps> = ({ totalItems }) => {
           key={i}
           className={`mx-1 p-2 px-3 sm:px-4 cursor-pointer outline-none rounded-full ${
             i === currentPage
-              ? "bg-blue-500 text-white"
-              : "bg-gray-200 hover:bg-blue-300"
+              ? "bg-orange-400 text-white"
+              : "bg-orange-200 hover:bg-orange-300"
           }`}
           onClick={() => onPageChange(i)}
         >
@@ -55,7 +55,7 @@ const Pagination: FC<PaginationProps> = ({ totalItems }) => {
     <ul className="flex list-none flex-wrap justify-center gap-2">
       <li
         className={`mx-1 p-2 px-3 sm:px-4 cursor-pointer outline-none rounded-full ${
-          currentPage === 1 ? "bg-[#666]" : "bg-gray-200 hover:bg-blue-300"
+          currentPage === 1 ? "bg-[#666]" : "bg-gray-200 hover:bg-orange-300"
         }`}
         onClick={() => onPageChange(currentPage - 1)}
       >
@@ -66,7 +66,7 @@ const Pagination: FC<PaginationProps> = ({ totalItems }) => {
         className={`mx-1 p-2 px-3 sm:px-4 cursor-pointer outline-none rounded-full ${
           currentPage === totalPages
             ? "opacity-50"
-            : "bg-gray-200 hover:bg-blue-300"
+            : "bg-gray-200 hover:bg-orange-300"
         }`}
         onClick={() => onPageChange(currentPage + 1)}
       >

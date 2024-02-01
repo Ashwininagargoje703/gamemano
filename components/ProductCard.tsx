@@ -22,7 +22,7 @@ const ProductCard = ({ product }: { product: Product }) => {
   return (
     <>
       <div
-        className="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
+        className="max-w-xs mx-auto bg-[#fef3bc] shadow-lg rounded-lg overflow-hidden cursor-pointer sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
         onClick={() => router.push(`/products/${product.id}`)}
       >
         <img

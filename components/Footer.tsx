@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="text-white p-8 w-full" style={{ background: "#13100A" }}>
+    <footer className="text-white p-8 w-full bg-[#15140f]" >
       <div className="flex flex-col md:flex-row justify-center md:space-x-4">
         <p className="mb-2 md:mb-0">Privacy Notice</p>
         <p className="mb-2 md:mb-0">Terms of Service</p>
