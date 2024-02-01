@@ -6,10 +6,7 @@ function ProductList({
   products,
   categories,
 }: {
-  products: {
-    products: [];
-    total: number;
-  };
+  products: any;
   categories: [string];
 }) {
   return (
@@ -18,7 +15,7 @@ function ProductList({
         <div className="flex flex-col md:flex-row md:gap-5">
           <Filter categories={categories} />
           <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
-            {products.products?.map((item) => (
+            {products.products?.map((item:any) => (
               <ProductCard key={item.id} product={item} />
             ))}
           </div>
