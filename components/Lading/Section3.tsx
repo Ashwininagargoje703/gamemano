@@ -3,7 +3,7 @@ import { FC } from "react";
 const Section3: FC = () => {
   return (
 <div className="relative w-full p-4 md:p-8 flex flex-col md:flex-row items-center bg-transparent">
-<div className="absolute top-0 right-0 hidden md:block">
+<div className="absolute top-0 right-0 hidden md:blocks">
     <img
       className="mx-auto md:mx-0 md:float-right"
       src="/img7.png"

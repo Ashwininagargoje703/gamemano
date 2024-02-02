@@ -33,7 +33,7 @@ const Section = () => {
               Buy now for $40 only
             </p>
           </div>
-
+         
           <img className="w-full md:w-auto" src="/new4.jpeg" alt="..." />
         </div>
       </div>

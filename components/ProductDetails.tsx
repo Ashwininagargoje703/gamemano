@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import ProductSlider from "./Lading/ProductSlider";
 
 interface Product {
   id: number;
@@ -32,7 +33,18 @@ const ProductDetails = ({ product }: { product: Product }) => {
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
-    <div className="max-w-screen-lg min-h-[500px] mx-auto my-8 p-4 lg:p-8 bg-white shadow-lg rounded-lg">
+    <>
+    {/* <div className="relative w-full">
+      <img
+        src="https://img.freepik.com/free-vector/black-background-with-white-border-black-background-with-light-middle_483537-4566.jpg"
+        alt="Product Image"
+        className="w-[100vw] h-auto"
+      />
+      <div className="absolute inset-0 flex justify-center items-center text-white">
+        <h1 className="text-3xl font-bold text-center">Product Details</h1>
+      </div>
+    </div> */}
+    <div className="max-w-screen-lg min-h-[500px] mx-auto my-8 p-4 lg:p-8 bg-[#FEF3BC] shadow-lg rounded-lg">
       <div className="flex flex-col md:flex-row gap-4">
         <div className="w-full order-2 md:w-1/2 md:order-2 sm:order-2 lg:order-2">
           {/* Details Section */}
@@ -54,28 +66,28 @@ const ProductDetails = ({ product }: { product: Product }) => {
             <div className="flex items-center mb-4">
               <div className="flex items-center text-yellow-400">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <svg
-                    key={star}
-                    className={`h-5 w-5 fill-current ${
-                      star <= rating ? "text-yellow-500" : "text-gray-300"
-                    }`}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 0l2.4 7.2H20l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h11.6z" />
-                  </svg>
+          <svg
+          key={star}
+          className={`h-4 w-4 fill-current ${
+            star <= product.rating ? "text-yellow-500" : "text-gray-300"
+          }`}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path d="M10 0l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6l2.4-7.2z" />
+        </svg>
                 ))}
               </div>
               <span className="text-gray-600 ml-2">{rating.toFixed(1)}</span>
             </div>
-
+          
             <p className="text-gray-600 mb-4">Brand: {brand}</p>
             <p className="text-gray-600 mb-4">Category: {category}</p>
             <p className="text-gray-600 mb-4">Stock: {stock} units available</p>
 
             <div>
               <button
-                className="bg-blue-500 text-white px-4 py-2 rounded-full focus:outline-none"
+                className="bg-orange-400 text-white px-4 py-2 rounded-full focus:outline-none"
                 onClick={() => alert(`Added ${title} to the cart!`)}
               >
                 Add to Cart
@@ -104,6 +116,10 @@ const ProductDetails = ({ product }: { product: Product }) => {
         </div>
       </div>
     </div>
+
+    <ProductSlider />
+
+    </>
   );
 };
 

@@ -2,7 +2,8 @@ import ProductCard from "./ProductCard";
 import Pagination from "./Pagination";
 import Filter from "./Filter";
 
-function ProductList({
+function ProductList(
+  {
   products,
   categories,
 }: {

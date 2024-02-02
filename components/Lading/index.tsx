@@ -5,6 +5,8 @@ import Section from "./Section1";
 import Section2 from "./Section2";
 import Section3 from "./Section3";
 import Slider from "./Slider";
+import ProductSlider from "./ProductSlider";
+import TrendingProductsSection from "./tranding";
 
 
 const LandingPage = () => {
@@ -38,6 +40,9 @@ const LandingPage = () => {
           />
         </div> // Render the image for desktop view
       )}
+
+      {/* <ProductSlider  /> */}
+      <TrendingProductsSection />
 
       <Section />
       <Section2 />
