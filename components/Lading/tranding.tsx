@@ -3,10 +3,7 @@
 import Link from "next/link";
 import ProductSlider from "./ProductSlider";
 import { FaArrowRight } from "react-icons/fa";
-import '../../style/fonts.css';
 import { useEffect, useState } from "react";
-
-
 
 const TrendingProductsSection: React.FC = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -29,7 +26,7 @@ const TrendingProductsSection: React.FC = () => {
   return (
     <div className="bg-black w-full h-[90vh] text-white flex flex-col justify-center items-start p-4">
       <div className="flex justify-between w-[85vw] lg:ml-20">
-        <h2 className="text-3xl mb-4 font-routhem" >Most Trending</h2>
+        <h2 className="text-3xl mb-4 " >Most Trending</h2>
         <Link href="/products" className="text-orange-300 flex items-center">
       View All Products <FaArrowRight className="ml-1" />
     </Link>

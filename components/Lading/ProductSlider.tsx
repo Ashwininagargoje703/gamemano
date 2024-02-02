@@ -3,7 +3,6 @@ import Slider from 'react-slick'
  import Image from 'next/image'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ProductInterface } from '../model/Product.types';
 import ProductCard from '../ProductCard';
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 
