@@ -15,16 +15,16 @@ const Sidebar = () => {
       } bg-[#15140f] text-white z-10`}
     >
       <div className="flex flex-col items-center">
-        {/* <img
+        <img
           src="/logo.png"
           alt="logo"
           style={{ height: "35px", width: "50px" }}
           className="mb-10 mt-5"
-        /> */}
+        />
 
-        <h2 className="font-Pressstart text-[#DAB785] text-3xl lg:pt-5 lg:pb-5">
+        {/* <h2 className="font-Pressstart text-[#DAB785] text-3xl lg:pt-5 lg:pb-5">
           GQ
-        </h2>
+        </h2> */}
 
         <Link href="/" onClick={() => dispatch(updateOpen(false))}>
           <img src="/icon1.png" alt="icon" className="mb-8 h-[25px] w-[25px]" />
