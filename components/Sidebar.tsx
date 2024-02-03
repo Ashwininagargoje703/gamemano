@@ -36,12 +36,7 @@ const Sidebar = () => {
           style={{ height: "25px", width: "25px" }}
           className="mb-8"
         />
-        <img
-          src="/icon3.png"
-          alt="icon"
-          style={{ height: "25px", width: "25px" }}
-          className="mb-8"
-        />
+
         <img
           src="/icon4.png"
           alt="icon"
@@ -68,6 +63,13 @@ const Sidebar = () => {
         />
         <img
           src="/icon8.png"
+          alt="icon"
+          style={{ height: "25px", width: "25px" }}
+          className="mb-8"
+        />
+
+        <img
+          src="/icon3.png"
           alt="icon"
           style={{ height: "25px", width: "25px" }}
           className="mb-8"
