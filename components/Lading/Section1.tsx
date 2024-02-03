@@ -15,7 +15,7 @@ const Section = () => {
 
         <br />
         <br />
-        <p className="text-white font-prostoOne text-base text-center md:text-left">
+        <p className="text-white font-prostoOne text-base text-center md:text-left font-prosto">
           Players assume the role of Deacon St. John, a former bounty hunter
           struggling to survive in a post-apocalyptic world filled with
           zombie-like creatures called Freaks. Though players are surrounded by

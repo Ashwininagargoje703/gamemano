@@ -157,7 +157,7 @@ function Filter({ categories }: { categories: [string] }) {
                 <label
                   className={`flex items-center text-xs md:text-sm cursor-pointer ${
                     category === selectedProduct
-                      ? "bg-yellow-300 pl-2 text-black font-semibold"
+                      ? "bg-orange-200  text-black font-semibold"
                       : "bg-transparent text-gray-200"
                   }`}
                 >

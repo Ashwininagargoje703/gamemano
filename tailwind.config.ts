@@ -14,7 +14,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        RouthemRegular: ["Routhem", "sans"],
+        Routhem: ["Routhem", "sans"],
+        Pressstart: ['"Press Start 2P"', 'system-ui'],
+      prosto: ["Prosto One", "sans-serif"]
       },
     },
   },
