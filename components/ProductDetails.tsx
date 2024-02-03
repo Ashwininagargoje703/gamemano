@@ -87,11 +87,12 @@ const ProductDetails = ({ product }: { product: Product }) => {
 
             <div>
               <button
-                className="bg-orange-400 text-white px-4 py-2 rounded-full focus:outline-none"
+                className="bg-[#E58F28] px-5 py-2.5 text-center text-white rounded-full transition-transform duration-300 transform hover:scale-110 hover:shadow-md"
                 onClick={() => alert(`Added ${title} to the cart!`)}
               >
                 Add to Cart
               </button>
+
             </div>
           </div>
         </div>
