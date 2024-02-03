@@ -19,7 +19,6 @@ interface Product {
 const ProductCard = ({ product }: { product: Product }) => {
   const router = useRouter();
 
-
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   const toggleDescription = () => {
@@ -63,9 +62,9 @@ const ProductCard = ({ product }: { product: Product }) => {
           </div>
 
           <p className="text-gray-600 text-sm md:text-base font-bold mb-2">
-  {product.description.split(' ').slice(0, 6).join(' ')}{product.description.split(' ').length > 10 ? '...' : ''}
-</p>
-
+            {product.description.split(" ").slice(0, 6).join(" ")}
+            {product.description.split(" ").length > 10 ? "..." : ""}
+          </p>
 
           <div className="flex flex-col md:flex-row items-center md:justify-between mt-3">
             {product.discountPercentage > 0 && (
